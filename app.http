@@ -1,0 +1,34 @@
+POST http://localhost:3000/register/
+Content-Type: application/json
+
+{
+  "username": "navalsayari5",
+  "name": "naval",
+  "password": "naval5577",
+  "gender": "male",
+  "location": "solapur"
+}
+
+###
+POST http://localhost:3000/login/
+Content-Type: application/json
+
+{
+    "username": "navalsayari5",
+    "password": "naval5577"
+}
+
+###
+PUT http://localhost:3000/change-password/
+Content-Type: application/json
+
+{
+    "username": "navalsayari5",
+    "oldPassword": "naval5577",
+    "newPassword": "ramsita"
+}
+
+###
+GET http://localhost:3000/states/3/stats/
+Content-Type: application/json
+authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im5hdmFsc2F5YXJpNSIsImlhdCI6MTYzNzY3Mzk0OH0.ks2acaOJAe6ZapvISnctl8VISDFQHiTsXq2EM9YO6a0
